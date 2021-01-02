@@ -1,7 +1,7 @@
 # drasyl Homebrew Tap
 
 ## How do I install this formula?
-`brew install drasyl-ovrlay/drasyl/drasyl`
+`brew install drasyl-overlay/drasyl/drasyl`
 
 Or `brew tap drasyl-overlay/drasyl` and then `brew install drasyl`.
 
