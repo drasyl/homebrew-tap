@@ -4,7 +4,7 @@ class Drasyl < Formula
   version "0.5.0"
   url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
   sha256 "ce1f869827be503a9aab73347233e5fd3c152ac12e6f2c69a95ac91eb4ff3a21"
-  license "LGPL-3.0"
+  license "MIT"
 
   livecheck do
     url "https://github.com/drasyl-overlay/drasyl/releases"
