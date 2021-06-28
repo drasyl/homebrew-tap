@@ -1,7 +1,8 @@
 class Drasyl < Formula
   desc "Toolkit for various drasyl-related tasks"
   homepage "https://drasyl.org/"
-  url "https://github.com/drasyl-overlay/drasyl/releases/download/v0.4.1/drasyl-0.4.1.zip"
+  version "0.4.1"
+  url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
   sha256 "214dd541367c383130ee99ed101f7d02af607a8a5fbd20db6b0a96d2cb99c45e"
   license "LGPL-3.0"
 
