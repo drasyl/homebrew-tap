@@ -3,7 +3,7 @@ class Drasyl < Formula
   homepage "https://drasyl.org/"
   version "0.5.1"
   url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
-  sha256 "2c520971ec36a4006dfb843f1e5ce046d4e07f82b1b284a3805f13d84fcb7b8c"
+  sha256 "84ac746b8b282620d254037d3a03ce4ab0542c364ecc5519c1c5ff4ffd785641"
   license "MIT"
 
   livecheck do
