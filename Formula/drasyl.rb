@@ -21,6 +21,6 @@ class Drasyl < Formula
 
   test do
     output = shell_output("#{bin}/drasyl help")
-    assert_match "Run a drasyl node.", output
+    assert_match "drasyl Command Line Interface: A collection of utilities for drasyl.", output
   end
 end
