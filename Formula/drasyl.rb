@@ -11,8 +11,6 @@ class Drasyl < Formula
     regex(/drasyl-(\d+(?:\.\d+)+).zip/i)
   end
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install
