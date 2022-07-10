@@ -1,9 +1,9 @@
 class Drasyl < Formula
   desc "Toolkit for various drasyl-related tasks"
   homepage "https://drasyl.org/"
-  version "0.7.0"
+  version "0.8.0"
   url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
-  sha256 "96858605f50350041f5e332863bb3474329aacf2fb710c38ab77ab600055a2d0"
+  sha256 "9fb0f690967399c7796417e1f0b15eee1c0b23c7ed78f802f4900610651bb069"
   license "MIT"
   head "https://github.com/drasyl-overlay/drasyl.git"
 
