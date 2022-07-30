@@ -1,0 +1,49 @@
+{
+  "name": "drasyl",
+  "full_name": "drasyl",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Toolkit for various drasyl-related tasks",
+  "license": "MIT",
+  "homepage": "https://drasyl.org/",
+  "versions": {
+    "stable": "0.8.0",
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/drasyl-overlay/drasyl/releases/download/v0.8.0/drasyl-0.8.0.zip",
+      "tag": null,
+      "revision": null
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "keg_only_reason": null,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "openjdk"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}
