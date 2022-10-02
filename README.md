@@ -1,7 +1,14 @@
 # drasyl Homebrew Tap
 
-## How do I install this formula?
+This tap contains the following formulas:
+
+## drasyl Command Line Tool
+
+https://docs.drasyl.org/cli
+
 `brew install drasyl-overlay/tap/drasyl`
 
-## Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## drasyl Native Shared Library
+
+`brew install drasyl-overlay/tap/libdrasyl`
