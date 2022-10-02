@@ -27,7 +27,7 @@ class Drasyl < Formula
   end
 
   test do
-    output = shell_output("#{bin}/drasyl help")
-    assert_match "drasyl Command Line Interface: A collection of utilities for drasyl.", output
+    output = shell_output("#{bin}/drasyl version")
+    assert_match /drasyl-cli.version #{version} \([a-f0-9]{7}\)/, output
   end
 end
