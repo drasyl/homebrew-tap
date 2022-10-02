@@ -8,8 +8,8 @@ class Drasyl < Formula
   head "https://github.com/drasyl-overlay/drasyl.git"
 
   livecheck do
-    url "https://github.com/drasyl-overlay/drasyl/releases"
-    regex(/drasyl-(\d+(?:\.\d+)+).zip/i)
+    url "https://github.com/drasyl-overlay/drasyl/releases/latest"
+    regex(/<title>.*?v(\d+(?:\.\d+)+).*?<\/title>/i)
   end
 
   depends_on "openjdk"
