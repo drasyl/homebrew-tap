@@ -15,7 +15,7 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl-overlay/drasyl/releases/download/v0.9.0/libdrasyl-0.9.0-macos-amd64.zip",
+      "url": "https://github.com/drasyl/drasyl/releases/download/v0.9.0/libdrasyl-0.9.0-macos-amd64.zip",
       "tag": null,
       "revision": null
     }

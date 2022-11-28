@@ -2,13 +2,13 @@ class Drasyl < Formula
   desc "Toolkit for various drasyl-related tasks"
   homepage "https://drasyl.org/"
   version "0.9.0"
-  url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
+  url "https://github.com/drasyl/drasyl/releases/download/v#{version}/drasyl-#{version}.zip"
   sha256 "423cde4a54fc442d312b2b85d66c757ec9494c6b892979d2e2b647e7cdf3fc08"
   license "MIT"
-  head "https://github.com/drasyl-overlay/drasyl.git"
+  head "https://github.com/drasyl/drasyl.git"
 
   livecheck do
-    url "https://github.com/drasyl-overlay/drasyl/releases/latest"
+    url "https://github.com/drasyl/drasyl/releases/latest"
     regex(/<title>.*?v(\d+(?:\.\d+)+).*?<\/title>/i)
   end
 

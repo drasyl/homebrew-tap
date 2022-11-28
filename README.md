@@ -6,9 +6,9 @@ This tap contains the following formulas:
 
 https://docs.drasyl.org/cli
 
-`brew install drasyl-overlay/tap/drasyl`
+`brew install drasyl/tap/drasyl`
 
 
 ## drasyl Native Shared Library
 
-`brew install drasyl-overlay/tap/libdrasyl`
+`brew install drasyl/tap/libdrasyl`

@@ -22,11 +22,11 @@ class Libdrasyl < Formula
     "linux-amd64"  => "beb04346769b03ed0cb7fd47720a21771727e3d91ffe594375c177370a5b2d4c",
   }
 
-  url "https://github.com/drasyl-overlay/drasyl/releases/download/v#{version}/libdrasyl-#{version}-#{platform}-#{arch}.zip"
+  url "https://github.com/drasyl/drasyl/releases/download/v#{version}/libdrasyl-#{version}-#{platform}-#{arch}.zip"
   sha256 checksums["#{platform}-#{arch}"]
 
   livecheck do
-    url "https://github.com/drasyl-overlay/drasyl/releases/latest"
+    url "https://github.com/drasyl/drasyl/releases/latest"
     regex(/<title>.*?v(\d+(?:\.\d+)+).*?<\/title>/i)
   end
 
