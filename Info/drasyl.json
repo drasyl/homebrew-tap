@@ -17,7 +17,8 @@
     "stable": {
       "url": "https://github.com/drasyl/drasyl/releases/download/v0.9.0/drasyl-0.9.0.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "423cde4a54fc442d312b2b85d66c757ec9494c6b892979d2e2b647e7cdf3fc08"
     }
   },
   "revision": 0,
@@ -30,6 +31,7 @@
   "dependencies": [
     "openjdk"
   ],
+  "test_dependencies": [],
   "recommended_dependencies": [],
   "optional_dependencies": [],
   "uses_from_macos": [],
