@@ -9,16 +9,16 @@
   "license": "MIT",
   "homepage": "https://drasyl.org/",
   "versions": {
-    "stable": "0.9.0",
+    "stable": "0.10.0",
     "head": "HEAD",
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl/drasyl/releases/download/v0.9.0/drasyl-0.9.0.zip",
+      "url": "https://github.com/drasyl/drasyl/releases/download/v0.10.0/drasyl-0.10.0.zip",
       "tag": null,
       "revision": null,
-      "checksum": "423cde4a54fc442d312b2b85d66c757ec9494c6b892979d2e2b647e7cdf3fc08"
+      "checksum": "827db64364db6e707aba43cdfbdfdbec52767c4372c6a8173ad761cb0ad7e274"
     }
   },
   "revision": 0,
