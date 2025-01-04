@@ -2,28 +2,35 @@
   "name": "drasyl",
   "full_name": "drasyl",
   "tap": null,
-  "oldname": null,
+  "oldnames": [],
   "aliases": [],
   "versioned_formulae": [],
   "desc": "Toolkit for various drasyl-related tasks",
   "license": "MIT",
   "homepage": "https://drasyl.org/",
   "versions": {
-    "stable": "0.10.0",
+    "stable": "0.11.0",
     "head": "HEAD",
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl/drasyl/releases/download/v0.10.0/drasyl-0.10.0.zip",
+      "url": "https://github.com/drasyl/drasyl/releases/download/v0.11.0/drasyl-0.11.0.zip",
       "tag": null,
       "revision": null,
-      "checksum": "827db64364db6e707aba43cdfbdfdbec52767c4372c6a8173ad761cb0ad7e274"
+      "using": null,
+      "checksum": "c7a34bf3f573aeeb0d6be2c54d0614a6ed1640993d2e7795be9f058677822081"
+    },
+    "head": {
+      "url": "https://github.com/drasyl/drasyl.git",
+      "branch": null,
+      "using": null
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {},
+  "pour_bottle_only_if": null,
   "keg_only": false,
   "keg_only_reason": null,
   "options": [],
@@ -35,8 +42,11 @@
   "recommended_dependencies": [],
   "optional_dependencies": [],
   "uses_from_macos": [],
+  "uses_from_macos_bounds": [],
   "requirements": [],
   "conflicts_with": [],
+  "conflicts_with_reasons": [],
+  "link_overwrite": [],
   "caveats": null,
   "installed": [],
   "linked_keg": null,
@@ -45,7 +55,16 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
+  "deprecation_replacement": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "disable_replacement": null,
+  "post_install_defined": false,
+  "service": null,
+  "tap_git_head": null,
+  "ruby_source_path": null,
+  "ruby_source_checksum": {
+    "sha256": "ea9c8df3cb56f275633834e1f146e61a7399e365474b505f5f6bb34689421c02"
+  }
 }
