@@ -9,17 +9,17 @@
   "license": "MIT",
   "homepage": "https://drasyl.org/",
   "versions": {
-    "stable": "0.11.0",
+    "stable": "0.12.0",
     "head": "HEAD",
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl/drasyl/releases/download/v0.11.0/drasyl-0.11.0.zip",
+      "url": "https://github.com/drasyl/drasyl/releases/download/v0.12.0/drasyl-0.12.0.zip",
       "tag": null,
       "revision": null,
       "using": null,
-      "checksum": "c7a34bf3f573aeeb0d6be2c54d0614a6ed1640993d2e7795be9f058677822081"
+      "checksum": "e66511415ee2d5436ae34aa75fa4d5367042ec78b12d6bfff01b53001c7fdad8"
     },
     "head": {
       "url": "https://github.com/drasyl/drasyl.git",
@@ -29,6 +29,9 @@
   },
   "revision": 0,
   "version_scheme": 0,
+  "autobump": true,
+  "no_autobump_message": null,
+  "skip_livecheck": false,
   "bottle": {},
   "pour_bottle_only_if": null,
   "keg_only": false,
@@ -55,16 +58,18 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "deprecation_replacement": null,
+  "deprecation_replacement_formula": null,
+  "deprecation_replacement_cask": null,
   "disabled": false,
   "disable_date": null,
   "disable_reason": null,
-  "disable_replacement": null,
+  "disable_replacement_formula": null,
+  "disable_replacement_cask": null,
   "post_install_defined": false,
   "service": null,
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "ea9c8df3cb56f275633834e1f146e61a7399e365474b505f5f6bb34689421c02"
+    "sha256": "e065593dfd984f400b61282467ca0b0046ac9dafc3b5560e6687465a9cfa3ba5"
   }
 }
