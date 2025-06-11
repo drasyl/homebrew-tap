@@ -1,30 +1,25 @@
 {
-  "name": "drasyl-java",
-  "full_name": "drasyl-java",
+  "name": "drasyl",
+  "full_name": "drasyl",
   "tap": null,
   "oldnames": [],
   "aliases": [],
   "versioned_formulae": [],
-  "desc": "Toolkit for various drasyl-related tasks",
-  "license": "MIT",
-  "homepage": "https://drasyl.org/",
+  "desc": "Software-defined networking across end hosts, leveraging drasyl for peer communication",
+  "license": null,
+  "homepage": "https://drasyl.org",
   "versions": {
-    "stable": "0.12.0",
-    "head": "HEAD",
+    "stable": "0.1.0",
+    "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl/drasyl/releases/download/v0.12.0/drasyl-0.12.0.zip",
+      "url": "https://github.com/drasyl/drasyl-rs.git",
       "tag": null,
       "revision": null,
       "using": null,
-      "checksum": "e66511415ee2d5436ae34aa75fa4d5367042ec78b12d6bfff01b53001c7fdad8"
-    },
-    "head": {
-      "url": "https://github.com/drasyl/drasyl.git",
-      "branch": null,
-      "using": null
+      "checksum": null
     }
   },
   "revision": 0,
@@ -37,10 +32,10 @@
   "keg_only": false,
   "keg_only_reason": null,
   "options": [],
-  "build_dependencies": [],
-  "dependencies": [
-    "openjdk"
+  "build_dependencies": [
+    "rust"
   ],
+  "dependencies": [],
   "test_dependencies": [],
   "recommended_dependencies": [],
   "optional_dependencies": [],
@@ -48,7 +43,7 @@
   "uses_from_macos_bounds": [],
   "requirements": [],
   "conflicts_with": [
-    "drasyl"
+    "drasyl-java"
   ],
   "conflicts_with_reasons": [
     "both install a `drasyl` binary"
@@ -70,10 +65,26 @@
   "disable_replacement_formula": null,
   "disable_replacement_cask": null,
   "post_install_defined": false,
-  "service": null,
+  "service": {
+    "run": [
+      "/opt/homebrew/opt/drasyl/bin/drasyl",
+      "run"
+    ],
+    "run_type": "immediate",
+    "keep_alive": {
+      "always": true
+    },
+    "require_root": true,
+    "environment_variables": {
+      "RUST_BACKTRACE": "full"
+    },
+    "working_dir": "/opt/homebrew/etc/drasyl",
+    "log_path": "/opt/homebrew/var/log/drasyl.out.log",
+    "error_log_path": "/opt/homebrew/var/log/drasyl.err.log"
+  },
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "4f3e403a06c4fb2520099dc5b056d523345f26b011e65c2cb3dc634ef29a6431"
+    "sha256": "5b421d59560f83a3b049b37516598ab1a8ab057ae5c6dfc0278e3a3374649ebb"
   }
 }
