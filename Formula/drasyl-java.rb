@@ -7,6 +7,8 @@ class DrasylJava < Formula
   license "MIT"
   head "https://github.com/drasyl/drasyl.git"
 
+  conflicts_with "drasyl", because: "both install a `drasyl` binary"
+
   livecheck do
     url "https://github.com/drasyl/drasyl/releases/latest"
     regex(/<title>.*?v(\d+(?:\.\d+)+).*?<\/title>/i)

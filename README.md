@@ -2,11 +2,15 @@
 
 This tap contains the following formulas:
 
-## drasyl Command Line Tool
+## Software-defined networking node
+
+`brew install drasyl/tap/drasyl`
+
+## drasyl Command Line Tool (Java)
 
 https://docs.drasyl.org/cli
 
-`brew install drasyl/tap/drasyl`
+`brew install drasyl/tap/drasyl-java`
 
 
 ## drasyl Native Shared Library
