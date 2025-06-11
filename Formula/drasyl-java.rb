@@ -1,4 +1,4 @@
-class Drasyl < Formula
+class DrasylJava < Formula
   desc "Toolkit for various drasyl-related tasks"
   homepage "https://drasyl.org/"
   version "0.12.0"
