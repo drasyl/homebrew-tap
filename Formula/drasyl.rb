@@ -9,24 +9,24 @@ class Drasyl < Formula
   depends_on "rust" => :build
 
   service do
-      run [opt_bin/"drasyl", "run"]
-      keep_alive true
-      require_root true
-      working_dir etc/"drasyl"
-      log_path var/"log/drasyl.out.log"
-      error_log_path var/"log/drasyl.err.log"
-      environment_variables RUST_LOG: "info"
-      environment_variables RUST_BACKTRACE: "full"
+    run [opt_bin/"drasyl", "run"]
+    keep_alive true
+    require_root true
+    working_dir etc/"drasyl"
+    log_path var/"log/drasyl.out.log"
+    error_log_path var/"log/drasyl.err.log"
+    environment_variables RUST_LOG: "info"
+    environment_variables RUST_BACKTRACE: "full"
   end
 
   def install
-      ENV["CC"] = "/usr/bin/clang"
-      ENV["CXX"] = "/usr/bin/clang++"
-      system "cargo", "build", "--package", "drasyl-sdn", "--release", "--features", "dns prometheus"
-      bin.install "target/release/drasyl"
+    ENV["CC"] = "/usr/bin/clang"
+    ENV["CXX"] = "/usr/bin/clang++"
+    system "cargo", "build", "--package", "drasyl-sdn", "--release", "--features", "dns prometheus"
+    bin.install "target/release/drasyl"
 
-      (etc/"drasyl").mkpath
-      (var/"log").mkpath
+    (etc/"drasyl").mkpath
+    (var/"log").mkpath
   end
 
   test do
