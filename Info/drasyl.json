@@ -49,7 +49,7 @@
     "both install a `drasyl` binary"
   ],
   "link_overwrite": [],
-  "caveats": null,
+  "caveats": "An API auth token has been created at:\n  $HOMEBREW_PREFIX/etc/drasyl/auth.token\n\nTo use drasyl you must copy it into your home directory:\n  mkdir -p ~/.drasyl\n  cp $HOMEBREW_PREFIX/etc/drasyl/auth.token ~/.drasyl/auth.token\n  chmod 600 ~/.drasyl/auth.token\n",
   "installed": [],
   "linked_keg": null,
   "pinned": false,
@@ -64,7 +64,7 @@
   "disable_reason": null,
   "disable_replacement_formula": null,
   "disable_replacement_cask": null,
-  "post_install_defined": false,
+  "post_install_defined": true,
   "service": {
     "run": [
       "/opt/homebrew/opt/drasyl/bin/drasyl",
@@ -85,6 +85,6 @@
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "3c1a9211cbf72241d9abaa913788fcae2aa962e3db65018ce63c9b5260dab6b0"
+    "sha256": "9ddc9f033303f1bb13f288154c134c2db3d5078c0925316bba3da706fc28f415"
   }
 }
