@@ -43,7 +43,7 @@ class Drasyl < Formula
 
     # Generate a random auth token if it doesn't already exist
     unless token_file.exist?
-      token_file.write(SecureRandom.hex(32))
+      token_file.write(SecureRandom.hex(24))
       chmod 0600, token_file
     end
   end
