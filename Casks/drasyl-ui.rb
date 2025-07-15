@@ -4,7 +4,11 @@ cask "drasyl-ui" do
   version "latest"
   sha256 :no_check
 
-  url "https://controller.drasyl.org/drasyl-ui-macos-arm64.zip"
+  if Hardware::CPU.intel?
+    url "https://controller.drasyl.org/drasyl-ui-macos-amd64.zip"
+  else
+    url "https://controller.drasyl.org/drasyl-ui-macos-arm64.zip"
+  end
 
   name "drasyl-ui"
   app "drasyl UI.app"
