@@ -5,7 +5,7 @@
   "oldnames": [],
   "aliases": [],
   "versioned_formulae": [],
-  "desc": "Software-defined networking across end hosts, leveraging drasyl for peer communication",
+  "desc": "drasyl provides secure, software-defined overlay networks, connecting all your devices",
   "license": null,
   "homepage": "https://drasyl.org",
   "versions": {
@@ -85,6 +85,6 @@
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "a1d00a0f9bb5f3d46e3775879862850ba762f4297d37afd29e1dfff2b9f63e45"
+    "sha256": "9340172447a0b8ff630ac442aae3a8559ceac69d1af09764c5dab2d77a72a828"
   }
 }
