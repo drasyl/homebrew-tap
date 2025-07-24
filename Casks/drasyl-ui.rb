@@ -5,9 +5,9 @@ cask "drasyl-ui" do
   sha256 :no_check
 
   if Hardware::CPU.intel?
-    url "https://controller.drasyl.org/drasyl-ui-macos-amd64.zip"
+    url "https://controller.drasyl.org/releases/0.1.0/macos-amd64/drasyl%20UI.zip"
   else
-    url "https://controller.drasyl.org/drasyl-ui-macos-arm64.zip"
+    url "https://controller.drasyl.org/releases/0.1.0/macos-arm64/drasyl%20UI.zip"
   end
 
   name "drasyl-ui"

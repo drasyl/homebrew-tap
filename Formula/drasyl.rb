@@ -2,7 +2,7 @@ require "securerandom"
 require "etc"
 
 class Drasyl < Formula
-  desc "Software-defined networking across end hosts, leveraging drasyl for peer communication"
+  desc "drasyl provides secure, software-defined overlay networks, connecting all your devices"
   homepage "https://drasyl.org"
   url "https://github.com/drasyl/drasyl-rs.git", branch: "master"
   version "0.1.0"
