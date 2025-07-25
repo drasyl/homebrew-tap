@@ -6,20 +6,25 @@
   "aliases": [],
   "versioned_formulae": [],
   "desc": "drasyl provides secure, software-defined overlay networks, connecting all your devices",
-  "license": null,
+  "license": "MIT",
   "homepage": "https://drasyl.org",
   "versions": {
     "stable": "0.1.0",
-    "head": null,
+    "head": "HEAD",
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/drasyl/drasyl-rs.git",
+      "url": "https://controller.drasyl.org/releases/0.1.0/macos-arm64/drasyl",
       "tag": null,
       "revision": null,
       "using": null,
       "checksum": null
+    },
+    "head": {
+      "url": "https://github.com/drasyl/drasyl-rs.git",
+      "branch": null,
+      "using": null
     }
   },
   "revision": 0,
@@ -85,6 +90,6 @@
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "9340172447a0b8ff630ac442aae3a8559ceac69d1af09764c5dab2d77a72a828"
+    "sha256": "3c3386316d9136cfc74860e518456264bf5001418f2e4a0dca625855ea206888"
   }
 }
