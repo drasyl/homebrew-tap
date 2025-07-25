@@ -4,12 +4,20 @@ require "etc"
 class Drasyl < Formula
   desc "drasyl provides secure, software-defined overlay networks, connecting all your devices"
   homepage "https://drasyl.org"
-  url "https://github.com/drasyl/drasyl-rs.git", branch: "master"
   version "0.1.0"
+  license "MIT"
+  head "https://github.com/drasyl/drasyl-rs.git"
 
   conflicts_with "drasyl-java", because: "both install a `drasyl` binary"
 
   depends_on "rust" => :build
+
+  # Dynamically determine architecture and set appropriate URL
+  if Hardware::CPU.arm?
+    url "https://controller.drasyl.org/releases/0.1.0/macos-arm64/drasyl"
+  else
+    url "https://controller.drasyl.org/releases/0.1.0/macos-amd64/drasyl"
+  end
 
   service do
     run [opt_bin/"drasyl", "run"]
@@ -23,19 +31,28 @@ class Drasyl < Formula
   end
 
   def install
-    # Use system clang compiler for C and C++
-    ENV["CC"] = "/usr/bin/clang"
-    ENV["CXX"] = "/usr/bin/clang++"
+    if build.head?
+      # Use system clang compiler for C and C++
+      ENV["CC"] = "/usr/bin/clang"
+      ENV["CXX"] = "/usr/bin/clang++"
 
-    # Build the drasyl-sdn package in release mode with DNS and Prometheus features
-    system "cargo", "build", "--package", "drasyl-sdn", "--release", "--features", "dns prometheus"
+      # Build the drasyl-sdn package in release mode with DNS and Prometheus features
+      system "cargo", "build", "--package", "drasyl-sdn", "--release", "--features", "dns prometheus"
 
-    # Install the drasyl binary
-    bin.install "target/release/drasyl"
+      # Install the drasyl binary
+      bin.install "target/release/drasyl"
 
-    # Create configuration and log directories
-    (etc/"drasyl").mkpath
-    (var/"log").mkpath
+      # Create configuration and log directories
+      (etc/"drasyl").mkpath
+      (var/"log").mkpath
+    else
+      # Install the pre-built binary for stable releases
+      bin.install "drasyl"
+      
+      # Create configuration and log directories
+      (etc/"drasyl").mkpath
+      (var/"log").mkpath
+    end
   end
 
   def post_install
